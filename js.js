@@ -14,8 +14,8 @@ function btnFlash(randBtn){
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
             randBtn.classList.add("flash")
-            // if(matchAll){audioPlayer.src = `tunes/${randBtn.getAttribute("id")}.mp3`
-            // audioPlayer.play()}
+            if(matchAll){audioPlayer.src = `tunes/${randBtn.getAttribute("id")}.mp3`
+            audioPlayer.play()}
         }, 600)
         setTimeout(()=>{
             randBtn.classList.remove("flash");
@@ -26,8 +26,8 @@ function btnFlash(randBtn){
 
 let userFlash = (randBtn) => { 
     setTimeout(()=>{
-        // if(matchAll){audioPlayer.src = `tunes/${randBtn.getAttribute("id")}.mp3`
-        // audioPlayer.play()}
+        if(matchAll){audioPlayer.src = `tunes/${randBtn.getAttribute("id")}.mp3`
+        audioPlayer.play()}
         randBtn.classList.add("user")
     }, 40)
     setTimeout(()=>{
@@ -41,8 +41,8 @@ let levelUp = async() => {
     h2.style.color = "green"
     await (new Promise((resolve, reject)=> {
         setTimeout(()=>{
-            // if(matchAll){audioPlayer.src = `tunes/success.mp3`
-            // audioPlayer.play()}
+            if(matchAll){audioPlayer.src = `tunes/success.mp3`
+            audioPlayer.play()}
         }, 300)
         setTimeout(()=>{
             resolve(1)
@@ -111,8 +111,8 @@ function checkMatch() {
             document.body.style.backgroundColor = "antiquewhite"
         }, 200)
         matchAll = false
-        // audioPlayer.src = `tunes/lose.mp3`
-        // audioPlayer.play()
+        audioPlayer.src = `tunes/lose.mp3`
+        audioPlayer.play()
         return false
     }
 }
