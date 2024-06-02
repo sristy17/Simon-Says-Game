@@ -17,19 +17,19 @@ body{
 }
 
 .yellow{
-    background-color: yellow;
+    background-color: rgb(231, 231, 110);
 }
 
 .red{
-    background-color: red;
+    background-color: rgb(167, 100, 100);
 }
 
 .purple{
-    background-color: purple;
+    background-color: rgb(160, 119, 160);
 }
 
 .green{
-    background-color: green;
+    background-color: rgb(127, 170, 127);
 }
 
 
@@ -38,5 +38,5 @@ body{
 }
 
 .userflash{
-    background-color: blue;
+    background-color: rgb(115, 115, 145);
 }
