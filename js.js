@@ -57,7 +57,7 @@ let levelUp = async() => {
         h2.style.fontSize = "26px"
     }, 300)
 
-    //random btn
+  
     for(let i=0; i<level; i++){
         let randIndx = Math.floor(Math.random() * 4)
         let randBtn = document.getElementsByClassName(btns[randIndx])[0]
@@ -93,7 +93,7 @@ function startGame(){
 
 function checkMatch() {
     if(userSeq[userSeq.length-1] == gameSeq[userSeq.length-1]){
-        // console.log(true)
+       
         return true
     }
     else{
@@ -103,9 +103,6 @@ function checkMatch() {
         setTimeout(()=>{
             document.body.style.backgroundColor = "red"
             let newBtn = document.querySelector(".start-btn")
-            newBtn.style.display = "block"
-            newBtn.backgroundColor = "green"
-            newBtn.innerText = "New Game"
         })
         setTimeout(()=>{
             document.body.style.backgroundColor = "antiquewhite"
