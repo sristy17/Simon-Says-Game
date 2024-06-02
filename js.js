@@ -108,7 +108,7 @@ function checkMatch() {
            let newBtn = document.querySelector(".start-btn")
             newBtn.style.display = "block"
             newBtn.backgroundColor = "green"
-            newBtn.innerText = "New Game"
+            newBtn.innerText = "Start a New Game"
         })
         setTimeout(()=>{
             document.body.style.backgroundColor = "antiquewhite"
