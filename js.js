@@ -105,7 +105,10 @@ function checkMatch() {
 
         setTimeout(()=>{
             document.body.style.backgroundColor = "red"
-            let newBtn = document.querySelector(".start-btn")
+           let newBtn = document.querySelector(".start-btn")
+            newBtn.style.display = "block"
+            newBtn.backgroundColor = "green"
+            newBtn.innerText = "New Game"
         })
         setTimeout(()=>{
             document.body.style.backgroundColor = "antiquewhite"
