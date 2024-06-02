@@ -91,6 +91,9 @@ function startGame(){
     }
 }
 
+
+
+
 function checkMatch() {
     if(userSeq[userSeq.length-1] == gameSeq[userSeq.length-1]){
        
